@@ -59,7 +59,7 @@ void SlamGmapping::init() {
     got_map_ = false;
 
     throttle_scans_ = 1;
-    base_frame_ = "base_link";
+    base_frame_ = "base_footprint";
     map_frame_ = "map";
     odom_frame_ = "odom";
     transform_publish_period_ = 0.05;
@@ -83,7 +83,7 @@ void SlamGmapping::init() {
     angularUpdate_ = 0.5;
     temporalUpdate_ = 1.0;
     resampleThreshold_ = 0.5;
-    particles_ = 30;
+    particles_ = 15;
     xmin_ = -10.0;
     ymin_ = -10.0;
     xmax_ = 10.0;
